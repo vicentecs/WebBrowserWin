@@ -1,0 +1,37 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object edtUrl: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Text = 'https://www.youtube.com/embed/XPsFCLOuyW0?autoplay=1'
+    Position.X = 16.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 529.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnAbrir: TButton
+    Position.X = 552.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 1
+    Text = 'Abrir'
+    OnClick = btnAbrirClick
+  end
+  object wbYT: TWebBrowser
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Size.Width = 609.000000000000000000
+    Size.Height = 425.000000000000000000
+    Size.PlatformDefault = False
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+  end
+end
